@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-
+import { Github } from "lucide-react";
 import { DataTable } from "@/components/tables/endPointsTable";
+import { Experience } from "@/components/3d/mvc3d";
 
 export default function Home() {
   return (
-    <div className="md:pt-10 flex flex-col gap-16 md:gap-32 z-0 relative">
+    <div className="md:pt-10 flex flex-col gap-16 md:gap-[400px] z-0 relative md:mt-[200px]">
       <div>
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-8xl">
           Reservation API
@@ -14,6 +15,18 @@ export default function Home() {
           This is a API that allows you to make reservations for any time of
           services, Using a Model-Control-View architecture.
         </p>
+      </div>
+      <div className="w-full flex flex-col md:flex-row gap-10 md:gap-30 justify-center items-center">
+        <div className="w-full md:w-[35%] h-[400px] overflow-hidden flex items-cente justify-center relative">
+          <div className="w-full h-[400px] md:h-[800px] absolute top-[-200px]">
+            <Experience />
+          </div>
+        </div>
+        <section className="w-full md:w-[40%] flex flex-col gap-3">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-8xl">
+            MVC Architecture
+          </h1>
+        </section>
       </div>
 
       <div className="flex flex-col gap-16">
@@ -33,13 +46,17 @@ export default function Home() {
               Free Code
             </h2>
             <p className="">
-              The people of the kingdom were outraged. They loved to tell jokes
+              If you like this code, please consider giving it a star on GitHub.
             </p>
+
+            <p className="mt-10">For express and typescript:</p>
+            <Button className="hover:bg-slate-500">
+              {" "}
+              <Github /> Github Repository
+            </Button>
           </section>
         </div>
       </div>
-
-      <Button className="hover:bg-slate-500">Click me</Button>
     </div>
   );
 }

@@ -48,3 +48,11 @@
     --ring: 142.4 71.8% 29.2%;
   }
 }
+
+.content {
+  transform: translate3d(calc(50% + 20px), -30px, 0);
+}
+
+.contentTwo {
+  transform: translate3d(calc(50% + 20px), -30px, 0);
+}
