@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
 import { DataTable } from "@/components/tables/endPointsTable";
 import { Experience } from "@/components/3d/mvc3d";
-
+import { GitButton } from "@/components/buttons/gitButon";
 export default function Home() {
   return (
     <div className="md:pt-10 flex flex-col gap-16 md:gap-[400px] z-0 relative md:mt-[200px]">
@@ -50,10 +48,7 @@ export default function Home() {
             </p>
 
             <p className="mt-10">For express and typescript:</p>
-            <Button className="hover:bg-slate-500">
-              {" "}
-              <Github /> Github Repository
-            </Button>
+            <GitButton link={"https://github.com/jhoescob/ServiceApi"} />
           </section>
         </div>
       </div>

@@ -90,7 +90,7 @@ export const Experience = () => {
           position={[-1, 2, 0]}
           text="View"
           texttwo="Use it as you want!"
-          colorMes={"#007"}
+          colorMes={"#004"}
         />
         <Dodecahedron
           position={[-2.5, 0, 0]}
