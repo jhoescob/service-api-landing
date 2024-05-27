@@ -31,7 +31,7 @@ function Dodecahedron({
   );
 
   const { scale }: any = useSpring({
-    scale: active ? 0.8 : 0.5,
+    scale: active ? 1 : 0.8,
     config: config.wobbly,
   });
 

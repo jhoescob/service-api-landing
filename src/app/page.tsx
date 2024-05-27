@@ -3,7 +3,7 @@ import { Experience } from "@/components/3d/mvc3d";
 import { GitButton } from "@/components/buttons/gitButon";
 export default function Home() {
   return (
-    <div className="md:pt-10 flex flex-col gap-16 md:gap-[400px] z-0 relative md:mt-[200px]">
+    <div className="md:pt-10 flex flex-col gap-[300px] md:gap-[400px] z-0 relative mt-[200px]">
       <div>
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-8xl">
           Reservation API
@@ -14,14 +14,14 @@ export default function Home() {
           services, Using a Model-Control-View architecture.
         </p>
       </div>
-      <div className="w-full flex flex-col md:flex-row gap-10 md:gap-30 justify-center items-center">
-        <div className="w-full md:w-[35%] h-[400px] overflow-hidden flex items-cente justify-center relative">
-          <div className="w-full h-[400px] md:h-[800px] absolute top-[-200px]">
+      <div className="w-full flex flex-col-reverse md:flex-row gap-10 md:gap-30 justify-center items-center ">
+        <div className="w-full md:min-w-[500px]  h-[400px] overflow-hidden relative">
+          <div className="w-[600px] h-[600px] md:h-[600px] absolute top-[-100px] md:left-[-100px]">
             <Experience />
           </div>
         </div>
-        <section className="w-full md:w-[40%] flex flex-col gap-3">
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-8xl">
+        <section className="w-full  flex flex-col gap-3">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-8xl text-center md:text-start">
             MVC Architecture
           </h1>
         </section>
